@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+#pre {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+}
+
+#notification {
+    background-color: #ffe0e0;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+#content {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#connectButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 80%;
+    max-width: 300px;
+}
+
+#connectButton:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#bottomImg {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#bottomImg img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+#bottomImg img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    #title {
+        font-size: 1.5em;
+    }
+
+    #notification {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #aos {
+        height: 300px;
+    }
+
+    #connectButton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    #bottomImg img {
+        width: 40px;
+        height: 40px;
+    }
+}
